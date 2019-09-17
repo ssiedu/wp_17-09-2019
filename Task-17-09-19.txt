@@ -1,0 +1,19 @@
+In one ERP System
+
+	you need to manage data for
+
+
+	employees
+	laptops
+	vehicles
+	projects
+
+	one employee can avail one laptop (not shared)
+
+	one employee can avail many vehicles
+
+	employess can work on many projects
+	many projects can have many employees.
+
+Develop an application using hibernate with all CRUD operations
+for employee,laptop,vehicles,projects. 
