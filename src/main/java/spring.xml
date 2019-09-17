@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd"
+    >
+
+
+	<bean id="act1" class="com.ssi.Account" scope="singleton" init-method="start" destroy-method="stop">
+		<property name="accountNo" value="ac101" />
+		<property name="cname" value="aaa" />
+		<property name="balance" value="5500" />
+		<property name="address" ref="adr2" />
+	</bean>
+	<bean id="adr1" class="com.ssi.Address">
+		<property name="hno" value="111" />
+		<property name="street" value="abcstreet" />
+		<property name="city" value="indore" />
+	</bean>
+	<bean id="adr2" class="com.ssi.Address">
+		<property name="hno" value="222" />
+		<property name="street" value="xyzstreet" />
+		<property name="city" value="bhopal" />
+	</bean>
+</beans>
+
